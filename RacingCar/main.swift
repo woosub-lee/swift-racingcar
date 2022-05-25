@@ -6,3 +6,11 @@
 
 import Foundation
 
+var controller = RacingController()
+
+do {
+    try controller.initRacing()
+    try controller.playRacing()
+} catch {
+    print("Error! \(error)")
+}
